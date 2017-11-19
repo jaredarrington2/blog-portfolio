@@ -3,7 +3,7 @@ var bodyParser = require('body-parser')
 var path = require('path');
 
 var app = express();
-app.use(express.static('views'))
+app.use(express.static(__dirname + '/views'));
 app.use(bodyParser.urlencoded({extended : false}))
 
 app.get('/' , (req, res) => {

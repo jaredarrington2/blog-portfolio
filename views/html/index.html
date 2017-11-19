@@ -33,14 +33,17 @@
           </div>
         </div>
         <div class="container" id="apiform">
-          <div class="form-group">
-            <label for="exampleTextarea">Example textarea</label>
-            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-          </div>
-          <div>
-            <div class="container">
-              <button type="submit" class="btn btn-primary">Submit</button>
+
+          <form action="/post-article?" method="POST" role="form" class="form-group">
+            <div class="form-group">
+              <label for="exampleTextarea">Example textarea</label>
+              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
             </div>
+            <div>
+              <div class="container">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+          </form>
           </div>
       </div>
     </div>
